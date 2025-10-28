@@ -27,11 +27,11 @@ struct CustomTabBarContainerView<Content: View>: View {
     }
     
     var body: some View {
-        VStack(spacing: 0) {
-            ZStack {
-                content
-            }
-            CustomTabBarView(tabs: tabs, selection: $selection)
+        ZStack(alignment: .bottom) {
+            content
+                .ignoresSafeArea()
+            
+            CustomTabBarView(tabs: tabs, selection: $selection, localSelection: selection)
         }
         .onPreferenceChange(TabBarItemsPreferenceKey.self) { newValue in
             self.tabs = newValue
@@ -41,11 +41,7 @@ struct CustomTabBarContainerView<Content: View>: View {
 
 #Preview {
     
-    let tabs: [TabBarItem] = [
-        TabBarItem(iconName: "house", title: "Home", color: Color.red),
-        TabBarItem(iconName: "heart", title: "Favorites", color: Color.blue),
-        TabBarItem(iconName: "person", title: "Profile", color: Color.green),
-    ]
+    let tabs: [TabBarItem] = [.favorites, .home, .profile]
     
     CustomTabBarContainerView(selection: .constant(tabs.first!)) {
         Color.red
