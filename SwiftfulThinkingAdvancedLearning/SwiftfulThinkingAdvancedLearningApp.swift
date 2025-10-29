@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftfulThinkingAdvancedLearningApp: App {
     var body: some Scene {
         WindowGroup {
-            AnyTransitionBootcamp()
+//            AnyTransitionBootcamp()
+//            AppTabBarView2()
+            DragAndDropWithTransferable()
         }
     }
 }
