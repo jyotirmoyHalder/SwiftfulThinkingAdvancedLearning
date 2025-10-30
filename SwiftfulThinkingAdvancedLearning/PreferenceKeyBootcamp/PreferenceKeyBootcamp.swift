@@ -37,11 +37,14 @@ extension View {
 struct SecondaryScreen: View {
     
     let text: String
-    @State private var newValue: String = ""
+    @State private var newValue: String = "what are you doing"
     
     var body: some View {
         Text(text)
-            .onAppear(perform: getDataFromDatabase)
+//            .onAppear(perform: getDataFromDatabase)
+//            .onTapGesture {
+//                newValue = "some new value"
+//            }
             .customTitle(newValue)
     }
     
