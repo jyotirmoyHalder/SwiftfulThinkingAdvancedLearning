@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct SwiftfulThinkingAdvancedLearningApp: App {
+//    @State private var store = Store() // need to add for working apptabBarView
     var body: some Scene {
         WindowGroup {
 //            AnyTransitionBootcamp()
+            
 //            AppTabBarView2()
-            DragAndDropWithTransferable()
+//            .environment(store)
+
+//            DragAndDropWithTransferable()
+            
+            ReorderAList()
         }
     }
 }
