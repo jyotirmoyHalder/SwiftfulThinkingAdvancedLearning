@@ -68,7 +68,7 @@ struct ProtocolsBootcamp: View {
     let colorTheme: ColorThemeProtocol
     let dataSource: ButtonDataSourceProtocol
     
-    var body: some View {
+    var body: some View {   
         ZStack {
             colorTheme.tertiary
                 .ignoresSafeArea()
