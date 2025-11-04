@@ -13,6 +13,11 @@ class UITestingBootcampViewModel: ObservableObject {
     @Published var texFieldText: String = ""
     @Published var currentuserIsSignedIn: Bool = false
     
+    init(currentUserIsSignedIn: Bool) {
+        self.currentuserIsSignedIn = currentUserIsSignedIn
+    }
+    
+    
     func signUpButtonPressed() {
         guard !texFieldText.isEmpty else { return }
         currentuserIsSignedIn = true
@@ -21,7 +26,11 @@ class UITestingBootcampViewModel: ObservableObject {
 
 struct UITestingBootcampView: View {
     
-    @StateObject private var vm = UITestingBootcampViewModel()
+    @StateObject private var vm: UITestingBootcampViewModel
+    
+    init(currentUserIsSignedIn: Bool) {
+        _vm = StateObject(wrappedValue: UITestingBootcampViewModel(currentUserIsSignedIn: currentUserIsSignedIn))
+    }
     
     var body: some View {
         ZStack {
@@ -50,7 +59,7 @@ struct UITestingBootcampView: View {
 }
 
 #Preview {
-    UITestingBootcampView()
+    UITestingBootcampView(currentUserIsSignedIn: true)
 }
 
 extension UITestingBootcampView {
