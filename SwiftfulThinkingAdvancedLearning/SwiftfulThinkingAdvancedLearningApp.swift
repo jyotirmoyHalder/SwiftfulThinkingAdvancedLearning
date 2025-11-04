@@ -19,7 +19,9 @@ struct SwiftfulThinkingAdvancedLearningApp: App {
 
 //            DragAndDropWithTransferable()
             
-            ReorderAList()
+//            ReorderAList()
+            
+            UITestingBootcampView()
         }
     }
 }

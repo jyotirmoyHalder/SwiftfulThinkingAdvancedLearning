@@ -18,11 +18,19 @@
 			remoteGlobalIDString = B2D67B222EAA3CC500A1D6E6;
 			remoteInfo = SwiftfulThinkingAdvancedLearning;
 		};
+		B2D67D6F2EBA428600A1D6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2D67B1B2EAA3CC500A1D6E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D67B222EAA3CC500A1D6E6;
+			remoteInfo = SwiftfulThinkingAdvancedLearning;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B2D67B232EAA3CC500A1D6E6 /* SwiftfulThinkingAdvancedLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftfulThinkingAdvancedLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2D67CE42EB8512E00A1D6E6 /* SwiftfulThinkingAdvancedLearning_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfulThinkingAdvancedLearning_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D67D692EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftfulThinkingAdvancedLearning_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -49,6 +57,11 @@
 			path = SwiftfulThinkingAdvancedLearning_Tests;
 			sourceTree = "<group>";
 		};
+		B2D67D6A2EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwiftfulThinkingAdvancedLearning_UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +80,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2D67D662EBA428600A1D6E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,6 +95,7 @@
 			children = (
 				B2D67B252EAA3CC500A1D6E6 /* SwiftfulThinkingAdvancedLearning */,
 				B2D67CE52EB8512E00A1D6E6 /* SwiftfulThinkingAdvancedLearning_Tests */,
+				B2D67D6A2EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests */,
 				B2D67B242EAA3CC500A1D6E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +105,7 @@
 			children = (
 				B2D67B232EAA3CC500A1D6E6 /* SwiftfulThinkingAdvancedLearning.app */,
 				B2D67CE42EB8512E00A1D6E6 /* SwiftfulThinkingAdvancedLearning_Tests.xctest */,
+				B2D67D692EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +159,29 @@
 			productReference = B2D67CE42EB8512E00A1D6E6 /* SwiftfulThinkingAdvancedLearning_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		B2D67D682EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2D67D712EBA428600A1D6E6 /* Build configuration list for PBXNativeTarget "SwiftfulThinkingAdvancedLearning_UITests" */;
+			buildPhases = (
+				B2D67D652EBA428600A1D6E6 /* Sources */,
+				B2D67D662EBA428600A1D6E6 /* Frameworks */,
+				B2D67D672EBA428600A1D6E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2D67D702EBA428600A1D6E6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B2D67D6A2EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests */,
+			);
+			name = SwiftfulThinkingAdvancedLearning_UITests;
+			packageProductDependencies = (
+			);
+			productName = SwiftfulThinkingAdvancedLearning_UITests;
+			productReference = B2D67D692EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,6 +196,10 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					B2D67CE32EB8512E00A1D6E6 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B2D67B222EAA3CC500A1D6E6;
+					};
+					B2D67D682EBA428600A1D6E6 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = B2D67B222EAA3CC500A1D6E6;
 					};
@@ -175,6 +224,7 @@
 			targets = (
 				B2D67B222EAA3CC500A1D6E6 /* SwiftfulThinkingAdvancedLearning */,
 				B2D67CE32EB8512E00A1D6E6 /* SwiftfulThinkingAdvancedLearning_Tests */,
+				B2D67D682EBA428600A1D6E6 /* SwiftfulThinkingAdvancedLearning_UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,6 +238,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B2D67CE22EB8512E00A1D6E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2D67D672EBA428600A1D6E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,6 +268,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B2D67D652EBA428600A1D6E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -218,6 +282,11 @@
 			isa = PBXTargetDependency;
 			target = B2D67B222EAA3CC500A1D6E6 /* SwiftfulThinkingAdvancedLearning */;
 			targetProxy = B2D67CE82EB8512E00A1D6E6 /* PBXContainerItemProxy */;
+		};
+		B2D67D702EBA428600A1D6E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D67B222EAA3CC500A1D6E6 /* SwiftfulThinkingAdvancedLearning */;
+			targetProxy = B2D67D6F2EBA428600A1D6E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +502,38 @@
 			};
 			name = Release;
 		};
+		B2D67D722EBA428600A1D6E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jyotirmoyhalder.SwiftfulThinkingAdvancedLearning-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftfulThinkingAdvancedLearning;
+			};
+			name = Debug;
+		};
+		B2D67D732EBA428600A1D6E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jyotirmoyhalder.SwiftfulThinkingAdvancedLearning-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftfulThinkingAdvancedLearning;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,6 +560,15 @@
 			buildConfigurations = (
 				B2D67CEB2EB8512E00A1D6E6 /* Debug */,
 				B2D67CEC2EB8512E00A1D6E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2D67D712EBA428600A1D6E6 /* Build configuration list for PBXNativeTarget "SwiftfulThinkingAdvancedLearning_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2D67D722EBA428600A1D6E6 /* Debug */,
+				B2D67D732EBA428600A1D6E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
